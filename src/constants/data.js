@@ -1,4 +1,3 @@
-import images from './images';
 
 const wines = [
   {

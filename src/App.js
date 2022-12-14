@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
     AboutUs,
@@ -11,6 +12,7 @@ import {
 } from "./container";
 import {Navbar} from "./components";
 import "./App.css";
+import DeliveryForm from "./container/DeliveryForm/DeliveryForm";
 
 const App = () => (
     <div>
@@ -22,6 +24,7 @@ const App = () => (
                 <Route  path='/about' element={< AboutUs/>}/>
                 <Route  path='/menu' element={< SpecialMenu/>}/>
                 <Route  path='/contact' element={< FindUs/>}/>
+                <Route path='/delivery' element={<DeliveryForm/>}/>
                 <Route  path='*' element={<NotFound/>}/>
             </Routes>
             <Footer/>
