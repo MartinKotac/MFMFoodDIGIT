@@ -28,9 +28,8 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className="app__navbar-login">
-                <a href="/" className="p__opensans_1">
-                    Book Table
-                </a>
+                <Link to="/booking" className="p__opensans_1">Book Table</Link>
+                <Link to="/delivery" className="p__opensans_1">Delivery</Link>
             </div>
             <div className="app__navbar-smallscreen">
                 <GiHamburgerMenu
