@@ -9,7 +9,9 @@ const Navbar = () => {
     return (
         <nav className="app__navbar">
             <div className="p__opensans_1">
-                <h1>MFM FOOD</h1>
+                <h1>
+                    <Link to="/home">MFM FOOD</Link>
+                </h1>
             </div>
             <ul className="app__navbar-links">
                 <li className="p__opensans_1">
