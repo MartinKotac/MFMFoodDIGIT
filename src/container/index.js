@@ -4,12 +4,14 @@ import Footer from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
 import Header from './Header/Header';
 import SpecialMenu from './Menu/SpecialMenu';
+import NotFound from "./NotFound/notFound";
 
 export {
-  AboutUs,
-  FindUs,
-  Footer,
-  Gallery,
-  Header,
-  SpecialMenu,
+    AboutUs,
+    FindUs,
+    Footer,
+    Gallery,
+    Header,
+    SpecialMenu,
+    NotFound
 };
