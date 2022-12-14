@@ -1,3 +1,3 @@
 # MFM_FOOD 
 
-DIGIT Workshop ReactJS.
+DIGIT Workshop ReactJS single page application .
