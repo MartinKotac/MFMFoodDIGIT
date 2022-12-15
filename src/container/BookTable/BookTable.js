@@ -39,25 +39,28 @@ const BookTable = () => {
                                         <Form.Group>
                                             <Form.Label className='labeli'>Name</Form.Label>
                                             <Form.Control type="text" placeholder="Enter name"/>
-                                            <Form.Text className="text-muted">
-                                                So we can make sure everything as it should be
-                                            </Form.Text>
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formAddress">
-                                            <Form.Label className='labeli'>Address</Form.Label>
-                                            <Form.Control type="text" placeholder="Enter address"/>
+                                            <Form.Label className='labeli'>Number of people</Form.Label>
+                                            <Form.Control type="number" placeholder="Enter number of people"/>
                                         </Form.Group>
-                                        <Form.Group className="mb-3" controlId="formPhone">
-                                            <Form.Label className='labeli'>Phone Number</Form.Label>
-                                            <Form.Control type="text" placeholder="07X-XXX-YYY"/>
+                                        <Form.Group className="mb-3" controlId="formAddress">
+                                            <Form.Label className='labeli'>Select table</Form.Label>
+                                            <Form.Control type="number" placeholder="Select table"/>
                                         </Form.Group>
+                                        <Form.Group className="mb-3" controlId="formAddress">
+                                            <Form.Label className='labeli'>Select offer</Form.Label>
+                                            <Form.Control type="number" placeholder="Select offer"/>
+                                        </Form.Group>
+                                        
                                         <Button variant="primary" type="button" className='custom__button' style={{
                                             textAlign: 'center',
                                             position: 'relative',
                                             left: '28%',
                                             width: '200px'
+                                    
                                         }}>
-                                            Submit
+                                            Make a reservation
                                         </Button>
                                     </Form>
                                 </Col>
