@@ -55,5 +55,48 @@ const seaFood = [
   },
 ];
 
+const offers = [
+  {
+    food: 'Grilled Squids',
+    price: '$30',
+    wine: 'La Vieillw Rose',
+  },
+  {
+    food: 'Grilled Octopus',
+    price: '$40',
+    wine: 'Tikves Special Edition',
+  },
+  {
+    food: 'Grilled Salmon',
+    price: '$70',
+    wine: 'Catena Malbee',
+  },
+  {
+    food: 'Trout on macedonian way',
+    price: '$80',
+    wine: 'Fic chardonnay',
+  },
+  {
+    food: 'Orange juiced salmon',
+    price: '$50',
+    wine: 'La Vieillw Rose',
+  },
+  {
+    food: 'Fried Squids',
+    price: '$40',
+    wine: 'Tikves Special Edition',
+  },
+  {
+    food: 'Steamed Mussels',
+    price: '$50',
+    wine: 'La Vieillw Rose',
+  },
+  {
+    food: 'Grilled Mussels',
+    price: '$33',
+    wine: 'Tikves Special Edition',
+  }
+];
 
-export default { wines, seaFood };
+
+export default { wines, seaFood, offers};
