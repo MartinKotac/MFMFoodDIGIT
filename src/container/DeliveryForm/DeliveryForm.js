@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import seaFood from "../../constants/data";
 import "./DeliveryForm.css"
 import {useState} from "react";
-import { ToastContainer, toast } from 'react-toastify';
+import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const DeliveryForm = () => {
@@ -17,7 +17,7 @@ const DeliveryForm = () => {
         payment: 'cash'
     })
 
-    const notify = () => toast.success("Successfull order!");
+    const notify = () => toast.success("Successful order!");
     const [show, setShow] = useState(false);
     const handleClose = () => {
         setShow(false);
@@ -26,7 +26,7 @@ const DeliveryForm = () => {
     const handleShow = () => setShow(true);
 
     const handleChange = (e) => {
-        setData({...data, [e.target.id] : e.target.value})
+        setData({...data, [e.target.id]: e.target.value})
     }
 
     return (
@@ -58,8 +58,30 @@ const DeliveryForm = () => {
                             <Form.Group className="mb-4" controlId="formCash">
                                 <Form.Label className='labeli' htmlFor='payment'>Select your payment</Form.Label>
                                 <div className='pari labeli'>
-                                    <Form.Check type="radio" id='payment' name="payment" label="Cash" value='cash' className='kes'/>
-                                    <Form.Check type="radio" id='payment' name="payment" label="Card" value='card' className='karta'/>
+                                    <div className="row"
+                                         style={{paddingLeft: '130px', paddingTop: '15px', paddingBottom: '10px'}}>
+                                        <div className="col-md-4 col-lg-4 col-sm-4">
+                                            <label>
+                                                <input value='cash' type="radio" id='payment' name="payment"
+                                                       className="card-input-element"/>
+                                                <div className="panel panel-default card-input">
+                                                    <div className="panel-heading">CASH</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div className="col-md-4 col-lg-4 col-sm-4">
+                                            <label>
+                                                <input value='card' type="radio" id='payment' name="payment"
+                                                       className="card-input-element"/>
+
+                                                <div className="panel panel-default card-input">
+                                                    <div className="panel-heading">CARD</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    {/*<Form.Check type="radio" id='payment' name="payment" label="Cash" value='cash' className='kes'/>*/}
+                                    {/*<Form.Check type="radio" id='payment' name="payment" label="Card" value='card' className='karta'/>*/}
                                 </div>
                             </Form.Group>
                             <Button onClick={handleShow} variant="primary" type="button" className='custom__button'
@@ -71,7 +93,8 @@ const DeliveryForm = () => {
                             <Modal.Header closeButton>
                                 <Modal.Title>Confirm your order</Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>{data.name}  {data.address}  {data.phone} {data.formFood}  payment method: {data.payment}</Modal.Body>
+                            <Modal.Body>{data.name} {data.address} {data.phone} {data.formFood} payment
+                                method: {data.payment}</Modal.Body>
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={handleClose}>
                                     Close
@@ -81,7 +104,7 @@ const DeliveryForm = () => {
                                 </Button>
                             </Modal.Footer>
                         </Modal>
-                        <ToastContainer />
+                        <ToastContainer/>
                     </Col>
                 </Row>
             </Container>
