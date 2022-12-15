@@ -3,89 +3,28 @@ import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { Row,Col} from 'react-bootstrap';
 import './BookTable.css'
+import {data} from "../../constants";
+import React from "react";
 
 const BookTable = () => {
     return(
     <div style={{ backgroundColor:'#0c0c0c'}}>
     <div className='container' style={{paddingLeft:'50px'}}>
         <Row >
-            <Col>
-                <Card className='cardDesign'>
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 1</Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                </Card.Body>
+            {data.offers.map((offer,index) => (
+                <Col>
+                <Card className='cardDesign ' >
+                    <Card.Body style={{minHeight: '200px'}}>
+                        <Card.Title className='cardDesignTitle'>Offer {index + 1}</Card.Title>
+                        <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
+                            {offer.food}   {offer.wine}   {offer.price}
+                        </Card.Text>
+                        <Button className='buttonDesign'>Book</Button>
+                    </Card.Body>
                 </Card>
             </Col>
-
-            <Col>
-                <Card className='cardDesign' >
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 2 </Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-
-            <Col>
-                <Card className='cardDesign'>
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 3</Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                </Card.Body>
-                </Card>
-            </Col>
+            ))}
         </Row>
-
-        <Row>
-            <Col>
-                <Card className='cardDesign'>
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 4</Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-
-            <Col>
-                <Card className='cardDesign'>
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 5 </Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-
-            <Col>
-                <Card className='cardDesign'>
-                <Card.Body>
-                <Card.Title className='cardDesignTitle'>Table 6</Card.Title>
-                <Card.Text style={{ fontSize:'20px', textAlign:'center'}}>
-                Select this table and choose from our menu options
-                </Card.Text>
-                <Button className='buttonDesign'>Book</Button>
-                    {/* on click show dropdown */}
-                </Card.Body>
-                </Card>
-            </Col>
-        </Row>
-        
-
     </div>
     </div>
     )
