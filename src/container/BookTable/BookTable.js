@@ -7,8 +7,8 @@ import './BookTable.css'
 const BookTable = () => {
     return(
     <div style={{ backgroundColor:'#0c0c0c'}}>
-    <div className='container'>
-        <Row>
+    <div className='container' style={{paddingLeft:'50px'}}>
+        <Row >
             <Col>
                 <Card className='cardDesign'>
                 <Card.Body>
