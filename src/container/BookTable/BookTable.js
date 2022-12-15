@@ -5,9 +5,8 @@ import {Row, Col} from 'react-bootstrap';
 import './BookTable.css'
 import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
-
 import {data} from "../../constants";
-import React from "react";
+
 
 const BookTable = () => {
     const [showForm, setShowForm] = useState(false);
@@ -15,22 +14,30 @@ const BookTable = () => {
         <div style={{backgroundColor: '#0c0c0c'}}>
             <div className='container' style={{paddingLeft: '50px'}}>
                 <Row>
-                    <Col>
-                        <Card className='cardDesign'>
-                            <Card.Body>
-                                <Card.Title className='cardDesignTitle'>Table 1</Card.Title>
-                                <Card.Text style={{fontSize: '20px', textAlign: 'center'}}>
-                                    Select this table and choose from our menu options
-                                </Card.Text>
-                                <Button onClick={() => {
-                                    setShowForm(!showForm)
-                                }} className='buttonDesign'>Book</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                    {data.offers.map((offer, index) => (
+                        <Col>
+                            <Card className='cardDesign'>
+                                <Card.Body>
+                                    <Card.Title className='cardDesignTitle'>Offer {index + 1}</Card.Title>
+                                    <Card.Text style={{fontSize: '20px', textAlign: 'center'}}>
+                                        {offer.food} {offer.wine} {offer.price}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+
                 </Row>
                 <Row>
+                    <Col>
+                        <Button onClick={() => {
+                            setShowForm(!showForm)
+                        }} className='buttonDesign'>Make a reservation</Button>
+                    </Col>
+                    <Col>
+                    </Col>
                 </Row>
+
                 <Row>
                     {showForm &&
                     <div style={{backgroundColor: '#0c0c0c'}}>
@@ -54,15 +61,15 @@ const BookTable = () => {
                                             <Form.Label className='labeli'>Select offer</Form.Label>
                                             <Form.Control type="number" placeholder="Select offer"/>
                                         </Form.Group>
-                                        
+
                                         <Button variant="primary" type="button" className='custom__button' style={{
                                             textAlign: 'center',
                                             position: 'relative',
                                             left: '28%',
                                             width: '200px'
-                                    
+
                                         }}>
-                                            Make a reservation
+                                            Submit
                                         </Button>
                                     </Form>
                                 </Col>
