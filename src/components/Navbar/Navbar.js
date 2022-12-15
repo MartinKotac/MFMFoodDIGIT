@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className="app__navbar">
             <div className="p__opensans_1">
                 <h1>
-                    <Link to="/home">MFM FOOD</Link>
+                    <Link to="/home" style={{fontFamily: 'var(--font-base)',color:'#dcca87'}}>MFM FOOD</Link>
                 </h1>
             </div>
             <ul className="app__navbar-links">
