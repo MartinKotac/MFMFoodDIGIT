@@ -1,0 +1,22 @@
+.forma{
+    position: relative;
+    left: 100%;
+    
+
+}
+.labeli{
+    color: #dcca87;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.pari{
+    display: flex;
+}
+.kes{
+    margin: 10px;
+}
+.karta{
+    margin-left: 50px;
+    margin-top: 10px;
+}
