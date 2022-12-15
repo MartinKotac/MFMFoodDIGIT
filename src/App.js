@@ -13,19 +13,21 @@ import {
 import {Navbar} from "./components";
 import "./App.css";
 import DeliveryForm from "./container/DeliveryForm/DeliveryForm";
+import BookTable from "./container/BookTable/BookTable";
 
 const App = () => (
     <div>
         <BrowserRouter>
             <Navbar/>
             <Routes>
-                <Route  path='/' element={< Header/>}/>
-                <Route  path='/home' element={< Header/>}/>
-                <Route  path='/about' element={< AboutUs/>}/>
-                <Route  path='/menu' element={< SpecialMenu/>}/>
-                <Route  path='/contact' element={< FindUs/>}/>
+                <Route path='/' element={< Header/>}/>
+                <Route path='/home' element={< Header/>}/>
+                <Route path='/about' element={< AboutUs/>}/>
+                <Route path='/menu' element={< SpecialMenu/>}/>
+                <Route path='/contact' element={< FindUs/>}/>
                 <Route path='/delivery' element={<DeliveryForm/>}/>
-                <Route  path='*' element={<NotFound/>}/>
+                <Route path='/booking' element={<BookTable/>}/>
+                <Route path='*' element={<NotFound/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
