@@ -77,7 +77,7 @@ const DeliveryForm = () => {
                                     Close
                                 </Button>
                                 <Button variant="primary" onClick={handleClose}>
-                                    Save Changes
+                                    Confirm
                                 </Button>
                             </Modal.Footer>
                         </Modal>
