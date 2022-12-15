@@ -26,7 +26,6 @@ const BookTable = () => {
                             </Card>
                         </Col>
                     ))}
-
                 </Row>
                 <Row>
                     <Col>
