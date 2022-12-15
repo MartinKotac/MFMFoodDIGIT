@@ -26,8 +26,9 @@ const DeliveryForm = () => (
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formFood">
                         <Form.Select  placeholder="Select your food">
+                            <option selected disabled>Select your food</option>
                             {seaFood.seaFood.map(food => {
-                                return (<option value="1">{food.title}  {food.price}</option>);
+                                return (<option value={food.title}>{food.title}  {food.price}</option>);
                             })}
                         </Form.Select>
                     </Form.Group>
