@@ -10,7 +10,6 @@ import menu from '../assets/wine.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/trout.webp';
-import findus from '../assets/8-6-octopus.jpg';
 
 
 export default {
@@ -26,5 +25,4 @@ export default {
   overlaybg,
   spoon,
   welcome,
-  findus
 };
