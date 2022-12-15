@@ -6,6 +6,8 @@ import './BookTable.css'
 import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 
+import {data} from "../../constants";
+import React from "react";
 
 const BookTable = () => {
     const [showForm, setShowForm] = useState(false);
