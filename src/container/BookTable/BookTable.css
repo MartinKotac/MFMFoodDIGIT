@@ -1,0 +1,45 @@
+.cardDesign
+{
+    width: 18rem;
+    margin-top: 50px;
+    background-color: #dcca87;
+    border-color:#cdb867; 
+    border-width:2px;
+    font-family: var(--font-base);
+}
+
+.cardDesignTitle
+{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.buttonDesign
+{
+    background-color: black;
+    border-color: #9c8c4f;
+    margin-left: 100px;
+}
+
+.buttonDesign:hover
+{
+    background-color: #cdb867;
+    border-color: #9c8c4f;
+    color: black;
+    font-weight: bold;
+}
+
+.buttonDesign:active
+{
+    background-color: #cdb867;
+    border-color: #9c8c4f;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: black;
+    background-color: #cdb867;
+    border-color: #9c8c4f;
+
+}
