@@ -20,7 +20,9 @@
 {
     background-color: black;
     border-color: #9c8c4f;
-    margin-left: 100px;
+    margin-left: 85%;
+    margin-top: 5%;
+    width: 200px;
 }
 
 .buttonDesign:hover
