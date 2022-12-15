@@ -20,3 +20,41 @@
     margin-left: 50px;
     margin-top: 10px;
 }
+
+.form-check-input:checked {
+    background-color: #dcca87;
+    border-color: #dcca87;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #dcca87;
+    border-color: #dcca87;
+}
+
+/**
+  Component
+**/
+
+label {
+    width: 100%;
+}
+
+.card-input-element {
+    display: none;
+}
+
+.card-input {
+    margin: 10px;
+    padding: 9.3px;
+    width: 70px;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+     box-shadow: 0 0 1px 1px gold;
+ }
+

@@ -36,9 +36,32 @@ const DeliveryForm = () => (
                     <Form.Group className="mb-3" controlId="formCash">
                         <Form.Label className='labeli'>Select your payment</Form.Label>
                         <div className='pari labeli'>
-                        <Form.Check type="radio" name="payment" label="Cash" className='kes'/>
-                        <Form.Check type="radio" name="payment" label="Card" className='karta'/>
-                        </div>
+                        <div class="row" style={{paddingLeft:'130px',paddingTop:'15px',paddingBottom:'10px'}}>
+    
+      <div class="col-md-4 col-lg-4 col-sm-4">
+        
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <div class="panel-heading">CASH</div>
+            </div>
+        </label>
+        
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-4">
+        
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <div class="panel-heading">CARD</div>
+            </div>
+        </label>
+        
+      </div>
+      </div>
+  </div>
                     </Form.Group>
                     <Button variant="primary" type="button" className='custom__button' style={{textAlign:'center',position:'relative',left:'28%',width:'200px'}}>
                         Submit
