@@ -80,8 +80,6 @@ const DeliveryForm = () => {
                                             </label>
                                         </div>
                                     </div>
-                                    {/*<Form.Check type="radio" id='payment' name="payment" label="Cash" value='cash' className='kes'/>*/}
-                                    {/*<Form.Check type="radio" id='payment' name="payment" label="Card" value='card' className='karta'/>*/}
                                 </div>
                             </Form.Group>
                             <Button onClick={handleShow} variant="primary" type="button" className='custom__button'
@@ -93,13 +91,20 @@ const DeliveryForm = () => {
                             <Modal.Header closeButton>
                                 <Modal.Title>Confirm your order</Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>{data.name} {data.address} {data.phone} {data.formFood} payment
-                                method: {data.payment}</Modal.Body>
+                            <Modal.Body>
+                                <ul>
+                                    <li>Name: {data.name} </li>
+                                    <li>Address: {data.address} </li>
+                                    <li>Phone: {data.phone} </li>
+                                    <li>Food: {data.formFood} </li>
+                                    <li>Payment method: {data.payment}</li>
+                                </ul>
+                            </Modal.Body>
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={handleClose}>
                                     Close
                                 </Button>
-                                <Button variant="primary" onClick={handleClose}>
+                                <Button className="modal-button" variant="primary" onClick={handleClose}>
                                     Confirm
                                 </Button>
                             </Modal.Footer>
