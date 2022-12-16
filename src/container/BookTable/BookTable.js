@@ -53,10 +53,6 @@ const BookTable = () => {
                                             <Form.Control type="number" placeholder="Enter number of people"/>
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formAddress">
-                                            <Form.Label className='labeli'>Select table</Form.Label>
-                                            <Form.Control type="number" placeholder="Select table"/>
-                                        </Form.Group>
-                                        <Form.Group className="mb-3" controlId="formAddress">
                                             <Form.Label className='labeli'>Select offer</Form.Label>
                                             <Form.Control type="number" placeholder="Select offer"/>
                                         </Form.Group>
